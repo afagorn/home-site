@@ -1,0 +1,11 @@
+#IDE
+.idea/
+
+*.zip
+*.ico
+*.exe
+*.jpg
+*.png
+*.sql
+
+*.local

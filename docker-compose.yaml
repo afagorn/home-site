@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  nginx:
+    env_file: ./docker/nginx/.env.local
+    image: nginx:stable-alpine
+    volumes:
+      - ./docker/nginx/default.conf:/etc/nginx/templates/default.conf.template
+      - ./public:/srv/www/
+    ports:
+      - "${NGINX_EXPOSE_PORT}:80"
